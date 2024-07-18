@@ -181,3 +181,35 @@ export const footerData = {
     Made by <a class="text-blue-600 underline dark:text-muted" href="https://onwidget.com/"> onWidget</a> · All rights reserved.
   `,
 };
+
+export const headerData2 = {
+  links: [
+    {
+      text: 'Home',
+      href: '#header-section',
+    },
+    {
+      text: 'Why',
+      href: '#why-section',
+    },
+    {
+      text: 'Price',
+      href: '#price-section',
+    },
+    {
+      text: 'FAQ',
+      href: '#faq-section',
+    },
+    {
+      text: 'Contact',
+      href: '#contact-section',
+    },
+  ],
+  // actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
+};
+
+export const footerData2 = {
+  footNote: `
+  Made by LaMi Design
+  `,
+};
