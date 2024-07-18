@@ -1,0 +1,21 @@
+---
+export interface Props {
+  footNote?: string;
+  theme?: string;
+}
+
+const { footNote = "", theme = "light" } = Astro.props;
+---
+
+<footer
+  class:list={[
+    { dark: theme === "dark" },
+    "relative border-t border-gray-200 dark:border-slate-800 not-prose",
+  ]}
+>
+  <div class="md:flex md:items-center md:justify-center py-6 md:py-8 mx-auto text-center">
+    <div class="text-sm dark:text-muted">
+      <Fragment set:html={footNote} />
+    </div>
+  </div>
+</footer>
