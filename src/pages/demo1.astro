@@ -1,0 +1,128 @@
+---
+import Layout2 from '~/layouts/PageLayout2.astro';
+import Header from '~/components/widgets/Header.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Testimonials from '~/components/widgets/Testimonials2.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+
+const metadata = {
+  title: 'Demo Basic Plan',
+};
+---
+
+<Layout2 metadata={metadata}>
+  <Fragment slot="header">
+    <Header
+      links={[
+        { text: 'Home', href: '#header-demo1' },
+        { text: 'Services', href: '#service-demo1' },
+        { text: 'Showcases', href: '#testimonials-demo1' },
+        { text: 'Contact', href: '#contact-demo1' },
+      ]}
+      isSticky
+    />
+  </Fragment>
+
+  <!-- Hero Widget ******************* -->
+  <Hero
+    id="header-demo1"
+    image={{
+      src: '~/assets/images/demo1/hero.webp',
+      alt: 'AstroWind Hero Image',
+    }}
+  >
+    <Fragment slot="title">
+      <span class="text-blue-500 dark:text-gray-200 highlight">VanConstruction</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Explore our diverse portfolio of beautifully crafted homes and discover the perfect inspiration for your next
+      project. Start building your future with us today.
+    </Fragment>
+  </Hero>
+
+  <!-- Features2 Widget ************** -->
+  <Features2
+    id="service-demo1"
+    title="Our Services"
+    items={[
+      {
+        title: 'Painting',
+        description: 'We provide professional painting services for both interior and exterior spaces.',
+        icon: 'tabler:paint',
+      },
+      {
+        title: 'Renovation',
+        description: 'We handle all types of renovation projects to update and improve your property.',
+        icon: 'tabler:hammer',
+      },
+      {
+        title: 'Custom Builds',
+        description: 'We create custom-built structures tailored to your specific requirements.',
+        icon: 'tabler:home',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <!-- Testimonials Widget *********** -->
+  <Testimonials
+    id="testimonials-demo1"
+    title="What our customers say?"
+    testimonials={[
+      {
+        testimonial: `The team was professional. Highly recommended!`,
+        name: 'Huong Tran',
+        image: {
+          src: '~/assets/images/demo1/1.webp',
+          alt: 'Paint Image',
+        },
+      },
+      {
+        testimonial: `The craftsmanship and attention to detail were top-notch. We love our new space!`,
+        name: 'Josh Wilkinson',
+        image: {
+          src: '~/assets/images/demo1/2.webp',
+          alt: 'Kitchen Image',
+        },
+      },
+      {
+        testimonial: 'The final result was a stunning, high-quality home that perfectly matched our vision.',
+        name: 'Sidney Hansen',
+        image: {
+          src: '~/assets/images/demo1/3.webp',
+          alt: 'House Image',
+        },
+      },
+    ]}
+  />
+
+  <!-- Contact Widget *********** -->
+  <Features3
+    id="contact-demo1"
+    title="Contact"
+    subtitle="We’re here to help and answer any question you might have."
+    columns={3}
+    items={[
+      {
+        title: 'Phone',
+        icon: 'tabler:phone',
+        description: '(123) 456-7890',
+      },
+      {
+        title: 'Email',
+        icon: 'tabler:mail',
+        description: 'support@demo.com',
+      },
+      {
+        title: 'Address',
+        icon: 'tabler:building',
+        description: '123 Anywhere St, Vancouver, BC',
+      },
+    ]}
+  />
+</Layout2>
