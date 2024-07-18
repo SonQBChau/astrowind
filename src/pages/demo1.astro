@@ -7,7 +7,8 @@ import Testimonials from '~/components/widgets/Testimonials2.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 
 const metadata = {
-  title: 'Demo Basic Plan',
+  title: 'Vanstruction',
+  ignoreTitleTemplate: true,
 };
 ---
 
@@ -29,11 +30,11 @@ const metadata = {
     id="header-demo1"
     image={{
       src: '~/assets/images/demo1/hero.webp',
-      alt: 'AstroWind Hero Image',
+      alt: 'Hero Image',
     }}
   >
     <Fragment slot="title">
-      <span class="text-blue-500 dark:text-gray-200 highlight">VanConstruction</span>
+      <span class="text-blue-500 dark:text-gray-200 highlight">Vanstruction</span>
     </Fragment>
 
     <Fragment slot="subtitle">
@@ -76,7 +77,7 @@ const metadata = {
     testimonials={[
       {
         testimonial: `The team was professional. Highly recommended!`,
-        name: 'Huong Tran',
+        name: 'Josh Wilkinson',
         image: {
           src: '~/assets/images/demo1/1.webp',
           alt: 'Paint Image',
@@ -84,7 +85,7 @@ const metadata = {
       },
       {
         testimonial: `The craftsmanship and attention to detail were top-notch. We love our new space!`,
-        name: 'Josh Wilkinson',
+        name: 'Huong Tran',
         image: {
           src: '~/assets/images/demo1/2.webp',
           alt: 'Kitchen Image',
