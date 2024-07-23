@@ -11,21 +11,17 @@ metadata:
   title:
     default: LaMiDesign
     template: '%s — LaMiDesign'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: "Web design for Small Business."
   robots:
     index: true
     follow: true
   openGraph:
     site_name: LaMiDesign
     images:
-      - url: '~/assets/images/default.png'
-        width: 1200
-        height: 628
+      - url: '~/assets/images/logo.webp'
+        width: 1176
+        height: 532
     type: website
-  twitter:
-    handle: '@onwidget'
-    site: '@onwidget'
-    cardType: summary_large_image
 
 i18n:
   language: en
