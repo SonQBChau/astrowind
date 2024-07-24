@@ -14,7 +14,7 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Header from '~/components/widgets/Header.astro';
 import { headerData2 } from '~/navigation';
-import Pricing from '~/components/widgets/Pricing.astro';
+import Pricing2 from '~/components/widgets/Pricing2.astro';
 import Steps2 from '~/components/widgets/Steps2.astro';
 
 const metadata = {
@@ -137,14 +137,14 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <Pricing
+  <Pricing2
     id="price-section"
     title="Our prices"
     subtitle="Only pay for what you need"
     prices={[
       {
         title: 'basic',
-        subtitle: 'Single-page website with 2-3 content sections. Good for small businesses.',
+        subtitle: 'Generic website with compact content. Good for small businesses.',
         price: '300',
         period: '/ 2 years',
         // items: [{ description: 'Single page website' }, { description: '2-3 sections content' }],
@@ -158,7 +158,7 @@ const metadata = {
       },
       {
         title: 'pro',
-        subtitle: 'Multi-page website with 3-5 pages of content. Ideal for established brands.',
+        subtitle: 'Custom website with more content. Ideal for established brands.',
         price: 500,
         period: '/ 2 years',
         // items: [{ description: 'Multiple pages website' }, { description: '3-5 pages content' }],
@@ -185,7 +185,7 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Pricing>
+  </Pricing2>
 
   <FAQs
     id="faq-section"
