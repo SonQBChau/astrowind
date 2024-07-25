@@ -12,7 +12,7 @@ img {
     height: auto;
 }
 
-.swiper-pagination-bullet {
+/* .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
     background: #000;
@@ -26,6 +26,7 @@ img {
     border: 2px solid #000;
 }
 
+*/
 /* .full-menu {
         display: none;
       } */
@@ -57,4 +58,78 @@ img {
         justify-content: center;
         align-items: center;
     }
+}
+/* .swiper-container {
+    width: 100%;
+    height: 100%;
+} */
+
+/* .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+} */
+
+.swiper {
+    position: relative;
+    /* Ensure the swiper container is positioned relative */
+}
+
+.swiper .swiper-pagination {
+    /* Adjust the top position relative to screen width */
+    width: 90vw;
+    /* Set width to 90% of the viewport width */
+    display: flex;
+    justify-content: center;
+    /* Center the bullets horizontally */
+    position: absolute;
+    /* Position it absolutely within the swiper container */
+    left: 50%;
+    /* Center it horizontally */
+    transform: translateX(-50%);
+    bottom: 3vw;
+}
+
+
+.swiper-pagination-bullet {
+    flex: 1;
+    /* Make bullets expand to fill available space */
+    margin: 0 0.5vw;
+    /* Add spacing between bullets */
+    height: 10vw;
+    /* Scale height according to screen width */
+    text-align: center;
+    /* Center the text horizontally */
+    line-height: 10vw;
+    /* Match line-height to height for vertical centering */
+    font-size: 4vw;
+    /* Increase font size for bigger text */
+    color: #ffffff;
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0;
+    /* Optional: remove border-radius if desired */
+    text-transform: uppercase;
+    /* Convert text to uppercase */
+    font-family: sans-serif;
+}
+
+.swiper-pagination-bullet-active {
+    color: #fff;
+    background: rgba(0, 122, 255, 0.3);
+    /* Subtle background with 60% opacity */
+    border: 1px solid rgba(0, 122, 255, 0.3);
+    /* Optional: light border for extra subtlety */
 }

@@ -6,10 +6,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" />
     <link rel="stylesheet" href="/styles/demo2.css" />
     <title>Quan Viet</title>
   </head>
@@ -36,27 +34,23 @@
       <!-- Full menu image for larger screens -->
       <div class="responsive-image">
         <picture>
-          <source
-            srcset="/images/demo2/full-menu.avif"
-            media="(min-width: 768px)"
-          />
-          <img
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
-            alt="Full Menu"
-          />
+          <source srcset="/images/demo2/full-menu.avif" media="(min-width: 768px)" />
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Full Menu" />
         </picture>
       </div>
     </div>
-    <script
-      is:inline
-      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
-    ></script>
+    <script is:inline src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script is:inline>
-      const swiper = new Swiper(".swiper", {
+      var menu = ['Appetizers', 'Main', 'Dessert'];
+      const swiper = new Swiper('.swiper', {
         pagination: {
-          el: ".swiper-pagination",
-          bulletClass: "swiper-pagination-bullet",
-          bulletActiveClass: "swiper-pagination-bullet-active",
+          el: '.swiper-pagination',
+          bulletClass: 'swiper-pagination-bullet',
+          bulletActiveClass: 'swiper-pagination-bullet-active',
+          clickable: true,
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + menu[index] + '</span>';
+          },
         },
       });
     </script>

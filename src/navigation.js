@@ -189,11 +189,11 @@ export const headerData2 = {
       href: '#header-section',
     },
     {
-      text: 'Why',
+      text: 'Features',
       href: '#why-section',
     },
     {
-      text: 'Price',
+      text: 'Pricing',
       href: '#price-section',
     },
     {
