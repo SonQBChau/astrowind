@@ -1,6 +1,6 @@
 site:
   name: LaMiDesign
-  site: 'https://lamidesign.pages.dev/'
+  site: 'https://lamidesign.ca/'
   base: '/'
   trailingSlash: false
 
