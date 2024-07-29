@@ -11,7 +11,7 @@ metadata:
   title:
     default: LaMiDesign
     template: '%s — LaMiDesign'
-  description: "Web design for Small Business."
+  description: "Professional website design services tailored for small businesses, restaurants, nail salons, and builders. Enhance your online presence with our custom web solutions."
   robots:
     index: true
     follow: true
